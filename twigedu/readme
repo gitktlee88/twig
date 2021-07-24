@@ -1,4 +1,5 @@
 The goal of this exercise is to write some executable code.
+It's been developed on Windows 10.
 
 Given an array of length >= 0, and a positive integer N, return the contents of the array divided into N
 equally sized arrays.
@@ -14,3 +15,8 @@ These commands run on the project folder wherever you saved.
 PS D:\venv37\twigedu> python -m twig
 
 PS D:\venv37\twigedu> python -m unittest tests/test_devide_chunks.py
+
+Or,
+
+We can run the executable file on the command prompt.
+> twigapp.exe which is under twigedu/dist/twigapp/
