@@ -1,0 +1,16 @@
+The goal of this exercise is to write some executable code.
+
+Given an array of length >= 0, and a positive integer N, return the contents of the array divided into N
+equally sized arrays.
+Where the size of the original array cannot be divided equally by N, the final part should have a length equal
+to the remainder.
+
+Execute as follows to show usage:
+
+I suppose Python path is already in your system PATH.
+These commands run on the project folder wherever you saved.
+(in my case "D:\venv37\twigedu")
+
+PS D:\venv37\twigedu> python -m twig
+
+PS D:\venv37\twigedu> python -m unittest tests/test_devide_chunks.py
