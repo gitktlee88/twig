@@ -4,6 +4,7 @@ def chunks(lst, n):
         yield lst[i:i + n]
 
 def input_validation(num):
+    """Input validation for number"""
     try:
         n = int(num)
         if n >= 0:
@@ -16,6 +17,7 @@ def input_validation(num):
         return input_validation(new_input)
 
 def yes_or_no(question):
+    """Check the reply to continue or not"""
     while "the answer is invalid":
         reply = str(input(question+' (y/n): ')).lower().strip()
         if reply[0] == 'y':
