@@ -1,20 +1,25 @@
 
 import unittest
 from twig.devide import chunks
+from twig.devide import input_validation
+from twig.devide import yes_or_no
 
-class Test_divide_chunks(unittest.TestCase):
+class Test_devide_chunks(unittest.TestCase):
 
-    def test_divide_chunks1(self):
+    def test_devide_chunks1(self):
+        """in case of empty array"""
         output1 = list(chunks([], 1))
         self.assertEqual(output1, [])
-        #print(os.path.abspath(os.getcwd()))
 
-    def test_divide_chunks2(self):
+    def test_devide_chunks2(self):
+        """in case of normal arrays"""
         output2 = list(chunks([1, 2, 2], 2))
         self.assertEqual(output2, [[1, 2], [2]])
-        #print(os.path.dirname(os.path.abspath(__file__)))
 
+    def test_devide_chunks3(self):
+        """in case of arrays got spaces"""
+        output2 = list(chunks([1   , 2, 2 ], 2))
+        self.assertEqual(output2, [[1, 2], [2]])
 
 if __name__ == '__main__':
-
     unittest.main()
